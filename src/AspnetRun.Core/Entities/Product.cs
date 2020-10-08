@@ -36,10 +36,8 @@ namespace AspnetRun.Core.Entities
         {
             var product = new Product
             {
-                //Id = productId,
-                //CategoryId = categoryId,
-                Id = categoryId,
-                CategoryId = productId,
+                Id = productId,
+                CategoryId = categoryId,
                 Name = name,
                 UnitPrice = unitPrice,
                 UnitsInStock = unitsInStock
