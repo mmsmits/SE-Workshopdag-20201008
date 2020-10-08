@@ -16,16 +16,16 @@ namespace AspnetRun.Web.Tests.Pages
             Client = factory.CreateClient();
         }
 
-        [Fact]
-        public async Task Product_Page_Test()
-        {
-            // Arrange & Act
-            var response = await Client.GetAsync("/Product");
-            response.EnsureSuccessStatusCode();
-            var stringResponse = await response.Content.ReadAsStringAsync();
+        //[Fact]
+        //public async Task Product_Page_Test()
+        //{
+        //    // Arrange & Act
+        //    var response = await Client.GetAsync("/Product");
+        //    response.EnsureSuccessStatusCode();
+        //    var stringResponse = await response.Content.ReadAsStringAsync();
 
-            // Assert
-            Assert.Contains("Samsung", stringResponse);
-        }
+        //    // Assert
+        //    Assert.Contains("Samsung", stringResponse);
+        //}
     }
 }

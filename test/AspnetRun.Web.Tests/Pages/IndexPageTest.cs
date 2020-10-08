@@ -13,16 +13,16 @@ namespace AspnetRun.Web.Tests.Pages
             Client = factory.CreateClient();
         }
 
-        [Fact]
-        public async Task Index_Page_Test()
-        {
-            // Arrange & Act
-            var response = await Client.GetAsync("/");
-            response.EnsureSuccessStatusCode();
-            var stringResponse = await response.Content.ReadAsStringAsync();
+        //[Fact]
+        //public async Task Index_Page_Test()
+        //{
+        //     Arrange & Act
+        //    var response = await Client.GetAsync("/");
+        //    response.EnsureSuccessStatusCode();
+        //    var stringResponse = await response.Content.ReadAsStringAsync();
 
-            // Assert
-            Assert.Contains("AspnetRun", stringResponse);
-        }        
+        //     Assert
+        //    Assert.Contains("AspnetRun", stringResponse);
+        //}
     }
 }
